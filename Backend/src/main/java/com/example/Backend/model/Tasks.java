@@ -14,4 +14,8 @@ public class Tasks {
     private Integer id;
 
     private String task;
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 }
