@@ -2,12 +2,16 @@ package com.example.Backend.model;
 
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.aspectj.weaver.loadtime.Agent;
 
 @Entity
 @Table(name="task")
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Tasks {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,5 +21,9 @@ public class Tasks {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public void setTask(String task) {
+        this.task = task;
     }
 }
