@@ -22,8 +22,4 @@ public class Tasks {
     public void setId(Integer id) {
         this.id = id;
     }
-
-    public void setTask(String task) {
-        this.task = task;
-    }
 }
